@@ -75,10 +75,11 @@ The script will make a sample query to Claude asking about the capital of France
 
 ## Model Information
 
-This demo uses the Claude 2 model (`anthropic.claude-v2`). If you want to use Claude 3, you'll need to:
+If you want to use Claude 3.7, you'll need to:
 1. Create an inference profile in AWS Bedrock console
-2. Configure Claude 3 in that profile
+2. Configure Claude 3.7 in that profile
 3. Use the inference profile ARN instead of the model ID
+4. If you assume a role which has access to bedrock, you can use that role by setting the AWS_PROFILE environment variable to the role name.
 
 ## Error Handling
 
